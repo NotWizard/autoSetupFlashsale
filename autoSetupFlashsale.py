@@ -71,7 +71,7 @@ def setEventAndEveryTime(eventTime):
 
         # 点击确定折叠开始时间的span
         chromeBrowser.find_element_by_xpath(
-            '//*[@class="main-container"]/section/div/div/div[3]/div/div[2]/div/form/div/label'
+            '//*[@class="filter-container"]/div[3]/div/div[2]/div/form/div/label'
         ).click()
         time.sleep(1)
 
