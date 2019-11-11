@@ -1,15 +1,22 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# !/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@File    :   autoSetupFlashsale.py
+@Time    :   2019/11/11 09:08:43
+@Author  :   XXX 
+@Version :   1.0
+@Contact :   notwizardx@gmail.com
+@Desc    :   None
+'''
 
 
-__author__ = 'Jie Xiang'
 
 from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
 import time
 import datetime
 # import requests
-startTime = ['10',  '13',  '16']
+startTime = ['10', '13', '16']
 
 productsID = "12612 12555 12520 6669 8615 12473 12514 12161 11921"
 
@@ -124,7 +131,7 @@ def setProductsInTimePoints(products):
 
                 chromeBrowser.find_element_by_xpath(
                     '//*[@class="editGoodsGounp"]/form/div/div/div/input'
-                ).send_keys(products7_9[j-1])
+                ).send_keys(products7_9[j - 1])
                 time.sleep(1)
 
                 chromeBrowser.find_element_by_xpath(
@@ -150,7 +157,7 @@ def setProductsInTimePoints(products):
 
                 chromeBrowser.find_element_by_xpath(
                     '//*[@class="editGoodsGounp"]/form/div/div/div/input'
-                ).send_keys(products4_6[k-1])
+                ).send_keys(products4_6[k - 1])
                 time.sleep(1)
 
                 chromeBrowser.find_element_by_xpath(
@@ -176,7 +183,7 @@ def setProductsInTimePoints(products):
 
                 chromeBrowser.find_element_by_xpath(
                     '//*[@class="editGoodsGounp"]/form/div/div/div/input'
-                ).send_keys(products1_3[l-1])
+                ).send_keys(products1_3[l - 1])
                 time.sleep(1)
 
                 chromeBrowser.find_element_by_xpath(
@@ -214,7 +221,8 @@ if __name__ == "__main__":
     time.sleep(1)
     # 跳转限时特价
     chromeBrowser.find_element_by_xpath(
-        '//*[@class="layout-nav-wrapper"]/div/ul/li[8]/ul/li[6]/a/span').click()
+        '//*[@class="layout-nav-wrapper"]/div/ul/li[8]/ul/li[6]/a/span').click(
+        )
     time.sleep(1)
 
     setEventAndEveryTime(startTime)
