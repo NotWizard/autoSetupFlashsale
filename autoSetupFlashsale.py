@@ -11,7 +11,7 @@ import datetime
 # import requests
 startTime = ['10',  '13',  '16']
 
-productsID = "9637 9627 9468 9512 9356 9675 9616 9672 9481"
+productsID = "12612 12555 12520 6669 8615 12473 12514 12161 11921"
 
 
 def cutUpID(IDString):
